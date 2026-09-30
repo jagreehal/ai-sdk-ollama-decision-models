@@ -1,0 +1,152 @@
+$ tsx src/bench.ts
+nimble #1 double-charge: billing (billing@1.00) 933ms
+nimble #1 invoice-vat: billing (billing@0.99) 950ms
+nimble #1 card-declined: billing (billing@0.97) 998ms
+nimble #1 checkout-500: engineering (engineering@0.99) 928ms
+nimble #1 webhook-silent: engineering (engineering@0.95) 921ms
+nimble #1 safari-blank: engineering (engineering@0.94) 949ms
+nimble #1 csv-export: support (support@0.99) 836ms
+nimble #1 add-teammate: support (support@0.99) 866ms
+nimble #1 reset-2fa: support (support@0.99) 945ms
+nimble #1 bug-refund: billing (billing@0.95) 914ms  ✗ expected triage
+nimble #1 seat-count: billing (billing@0.80) 911ms  ✗ expected triage
+nimble #1 vague: engineering (engineering@0.91) 810ms  ✗ expected triage
+nimble #2 double-charge: billing (billing@1.00) 914ms
+nimble #2 invoice-vat: billing (billing@0.99) 120ms
+nimble #2 card-declined: billing (billing@0.97) 127ms
+nimble #2 checkout-500: engineering (engineering@0.99) 107ms
+nimble #2 webhook-silent: engineering (engineering@0.95) 109ms
+nimble #2 safari-blank: engineering (engineering@0.94) 907ms
+nimble #2 csv-export: support (support@0.99) 103ms
+nimble #2 add-teammate: support (support@0.99) 97ms
+nimble #2 reset-2fa: support (support@0.99) 94ms
+nimble #2 bug-refund: billing (billing@0.95) 914ms  ✗ expected triage
+nimble #2 seat-count: billing (billing@0.80) 101ms  ✗ expected triage
+nimble #2 vague: engineering (engineering@0.91) 117ms  ✗ expected triage
+nimble #3 double-charge: billing (billing@1.00) 108ms
+nimble #3 invoice-vat: billing (billing@0.99) 98ms
+nimble #3 card-declined: billing (billing@0.97) 98ms
+nimble #3 checkout-500: engineering (engineering@0.99) 98ms
+nimble #3 webhook-silent: engineering (engineering@0.95) 97ms
+nimble #3 safari-blank: engineering (engineering@0.94) 938ms
+nimble #3 csv-export: support (support@0.99) 100ms
+nimble #3 add-teammate: support (support@0.99) 97ms
+nimble #3 reset-2fa: support (support@0.99) 107ms
+nimble #3 bug-refund: billing (billing@0.95) 931ms  ✗ expected triage
+nimble #3 seat-count: billing (billing@0.80) 97ms  ✗ expected triage
+nimble #3 vague: engineering (engineering@0.91) 93ms  ✗ expected triage
+tev1 #1 double-charge: billing (billing@1.00) 400ms
+tev1 #1 invoice-vat: billing (billing@0.99) 401ms
+tev1 #1 card-declined: billing (billing@0.97) 404ms
+tev1 #1 checkout-500: engineering (engineering@0.99) 466ms
+tev1 #1 webhook-silent: engineering (engineering@0.95) 455ms
+tev1 #1 safari-blank: engineering (engineering@0.96) 405ms
+tev1 #1 csv-export: support (support@0.96) 415ms
+tev1 #1 add-teammate: support (support@0.98) 402ms
+tev1 #1 reset-2fa: support (support@0.98) 456ms
+tev1 #1 bug-refund: billing (billing@0.74) 458ms  ✗ expected triage
+tev1 #1 seat-count: triage (billing@0.53) 451ms
+tev1 #1 vague: engineering (engineering@0.96) 407ms  ✗ expected triage
+tev1 #2 double-charge: billing (billing@1.00) 399ms
+tev1 #2 invoice-vat: billing (billing@0.99) 72ms
+tev1 #2 card-declined: billing (billing@0.97) 71ms
+tev1 #2 checkout-500: engineering (engineering@0.99) 62ms
+tev1 #2 webhook-silent: engineering (engineering@0.95) 60ms
+tev1 #2 safari-blank: engineering (engineering@0.96) 418ms
+tev1 #2 csv-export: support (support@0.96) 67ms
+tev1 #2 add-teammate: support (support@0.98) 64ms
+tev1 #2 reset-2fa: support (support@0.98) 61ms
+tev1 #2 bug-refund: billing (billing@0.74) 451ms  ✗ expected triage
+tev1 #2 seat-count: triage (billing@0.53) 68ms
+tev1 #2 vague: engineering (engineering@0.96) 67ms  ✗ expected triage
+tev1 #3 double-charge: billing (billing@1.00) 71ms
+tev1 #3 invoice-vat: billing (billing@0.99) 62ms
+tev1 #3 card-declined: billing (billing@0.97) 64ms
+tev1 #3 checkout-500: engineering (engineering@0.99) 61ms
+tev1 #3 webhook-silent: engineering (engineering@0.95) 63ms
+tev1 #3 safari-blank: engineering (engineering@0.96) 407ms
+tev1 #3 csv-export: support (support@0.96) 61ms
+tev1 #3 add-teammate: support (support@0.98) 59ms
+tev1 #3 reset-2fa: support (support@0.98) 59ms
+tev1 #3 bug-refund: billing (billing@0.74) 467ms  ✗ expected triage
+tev1 #3 seat-count: triage (billing@0.53) 67ms
+tev1 #3 vague: engineering (engineering@0.96) 64ms  ✗ expected triage
+tev1:0.8b #1 double-charge: billing (billing@0.99) 103ms
+tev1:0.8b #1 invoice-vat: billing (billing@0.72) 94ms
+tev1:0.8b #1 card-declined: billing (billing@0.73) 89ms
+tev1:0.8b #1 checkout-500: engineering (engineering@0.97) 97ms
+tev1:0.8b #1 webhook-silent: engineering (engineering@0.99) 97ms
+tev1:0.8b #1 safari-blank: engineering (engineering@0.98) 89ms
+tev1:0.8b #1 csv-export: support (support@0.96) 91ms
+tev1:0.8b #1 add-teammate: support (support@0.96) 89ms
+tev1:0.8b #1 reset-2fa: support (support@0.73) 98ms
+tev1:0.8b #1 bug-refund: engineering (engineering@0.82) 106ms  ✗ expected triage
+tev1:0.8b #1 seat-count: billing (billing@0.77) 98ms  ✗ expected triage
+tev1:0.8b #1 vague: engineering (engineering@0.85) 87ms  ✗ expected triage
+tev1:0.8b #2 double-charge: billing (billing@0.99) 87ms
+tev1:0.8b #2 invoice-vat: billing (billing@0.72) 26ms
+tev1:0.8b #2 card-declined: billing (billing@0.73) 23ms
+tev1:0.8b #2 checkout-500: engineering (engineering@0.97) 23ms
+tev1:0.8b #2 webhook-silent: engineering (engineering@0.99) 26ms
+tev1:0.8b #2 safari-blank: engineering (engineering@0.98) 120ms
+tev1:0.8b #2 csv-export: support (support@0.96) 54ms
+tev1:0.8b #2 add-teammate: support (support@0.96) 32ms
+tev1:0.8b #2 reset-2fa: support (support@0.73) 27ms
+tev1:0.8b #2 bug-refund: engineering (engineering@0.82) 172ms  ✗ expected triage
+tev1:0.8b #2 seat-count: billing (billing@0.77) 35ms  ✗ expected triage
+tev1:0.8b #2 vague: engineering (engineering@0.85) 39ms  ✗ expected triage
+tev1:0.8b #3 double-charge: billing (billing@0.99) 52ms
+tev1:0.8b #3 invoice-vat: billing (billing@0.72) 112ms
+tev1:0.8b #3 card-declined: billing (billing@0.73) 39ms
+tev1:0.8b #3 checkout-500: engineering (engineering@0.97) 29ms
+tev1:0.8b #3 webhook-silent: engineering (engineering@0.99) 58ms
+tev1:0.8b #3 safari-blank: engineering (engineering@0.98) 111ms
+tev1:0.8b #3 csv-export: support (support@0.96) 26ms
+tev1:0.8b #3 add-teammate: support (support@0.96) 31ms
+tev1:0.8b #3 reset-2fa: support (support@0.73) 44ms
+tev1:0.8b #3 bug-refund: engineering (engineering@0.82) 120ms  ✗ expected triage
+tev1:0.8b #3 seat-count: billing (billing@0.77) 27ms  ✗ expected triage
+tev1:0.8b #3 vague: engineering (engineering@0.85) 29ms  ✗ expected triage
+granite4.2:3b #1 double-charge: support (support@1.00) 543ms  ✗ expected billing
+granite4.2:3b #1 invoice-vat: billing (billing@1.00) 564ms
+granite4.2:3b #1 card-declined: support (support@1.00) 749ms  ✗ expected billing
+granite4.2:3b #1 checkout-500: engineering (engineering@1.00) 467ms
+granite4.2:3b #1 webhook-silent: support (support@1.00) 573ms  ✗ expected engineering
+granite4.2:3b #1 safari-blank: support (support@1.00) 562ms  ✗ expected engineering
+granite4.2:3b #1 csv-export: support (support@1.00) 562ms
+granite4.2:3b #1 add-teammate: support (support@1.00) 556ms
+granite4.2:3b #1 reset-2fa: support (support@1.00) 568ms
+granite4.2:3b #1 bug-refund: engineering (engineering@1.00) 557ms  ✗ expected triage
+granite4.2:3b #1 seat-count: engineering (engineering@1.00) 579ms  ✗ expected triage
+granite4.2:3b #1 vague: engineering (engineering@1.00) 550ms  ✗ expected triage
+granite4.2:3b #2 double-charge: support (support@1.00) 552ms  ✗ expected billing
+granite4.2:3b #2 invoice-vat: billing (billing@1.00) 550ms
+granite4.2:3b #2 card-declined: support (support@1.00) 545ms  ✗ expected billing
+granite4.2:3b #2 checkout-500: engineering (engineering@1.00) 547ms
+granite4.2:3b #2 webhook-silent: support (support@1.00) 548ms  ✗ expected engineering
+granite4.2:3b #2 safari-blank: engineering (engineering@1.00) 548ms
+granite4.2:3b #2 csv-export: support (support@1.00) 558ms
+granite4.2:3b #2 add-teammate: support (support@1.00) 587ms
+granite4.2:3b #2 reset-2fa: support (support@1.00) 606ms
+granite4.2:3b #2 bug-refund: engineering (engineering@1.00) 579ms  ✗ expected triage
+granite4.2:3b #2 seat-count: engineering (engineering@1.00) 556ms  ✗ expected triage
+granite4.2:3b #2 vague: engineering (engineering@1.00) 543ms  ✗ expected triage
+granite4.2:3b #3 double-charge: billing (billing@1.00) 553ms
+granite4.2:3b #3 invoice-vat: billing (billing@1.00) 570ms
+granite4.2:3b #3 card-declined: support (support@1.00) 549ms  ✗ expected billing
+granite4.2:3b #3 checkout-500: engineering (engineering@1.00) 539ms
+granite4.2:3b #3 webhook-silent: support (support@1.00) 550ms  ✗ expected engineering
+granite4.2:3b #3 safari-blank: support (support@1.00) 582ms  ✗ expected engineering
+granite4.2:3b #3 csv-export: support (support@1.00) 556ms
+granite4.2:3b #3 add-teammate: support (support@1.00) 552ms
+granite4.2:3b #3 reset-2fa: support (support@1.00) 544ms
+granite4.2:3b #3 bug-refund: engineering (engineering@1.00) 460ms  ✗ expected triage
+granite4.2:3b #3 seat-count: support (support@1.00) 569ms  ✗ expected triage
+granite4.2:3b #3 vague: support (support@1.00) 579ms  ✗ expected triage
+
+| Model | Policy match | Stable | p50 ms, first sight | p50 ms, repeat | Policy misses |
+|---|---|---|---|---|---|
+| nimble | 27/36 | 100% | 928 | 107 | bug-refund → billing @ 0.95, seat-count → billing @ 0.80, vague → engineering @ 0.91 |
+| tev1 | 30/36 | 100% | 415 | 67 | bug-refund → billing @ 0.74, vague → engineering @ 0.96 |
+| tev1:0.8b | 27/36 | 100% | 97 | 39 | bug-refund → engineering @ 0.82, seat-count → billing @ 0.77, vague → engineering @ 0.85 |
+| granite4.2:3b | 17/36 | 67% | 562 | 552 | double-charge → support @ 1.00, card-declined → support @ 1.00, webhook-silent → support @ 1.00, safari-blank → support @ 1.00, bug-refund → engineering @ 1.00, seat-count → engineering @ 1.00, vague → engineering @ 1.00, seat-count → support @ 1.00, vague → support @ 1.00 |

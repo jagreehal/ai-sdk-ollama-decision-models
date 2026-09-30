@@ -1,0 +1,1442 @@
+[
+  {
+    "model": "nimble",
+    "case": "double-charge",
+    "pass": 1,
+    "ms": 933,
+    "choice": "billing",
+    "p": 0.9957393421636658,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "invoice-vat",
+    "pass": 1,
+    "ms": 950,
+    "choice": "billing",
+    "p": 0.9909448013061272,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "card-declined",
+    "pass": 1,
+    "ms": 998,
+    "choice": "billing",
+    "p": 0.9696857945114368,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "checkout-500",
+    "pass": 1,
+    "ms": 928,
+    "choice": "engineering",
+    "p": 0.9912280777907837,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "webhook-silent",
+    "pass": 1,
+    "ms": 921,
+    "choice": "engineering",
+    "p": 0.9517121375266717,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "safari-blank",
+    "pass": 1,
+    "ms": 949,
+    "choice": "engineering",
+    "p": 0.9417605279508368,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "csv-export",
+    "pass": 1,
+    "ms": 836,
+    "choice": "support",
+    "p": 0.9927901803371021,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "add-teammate",
+    "pass": 1,
+    "ms": 866,
+    "choice": "support",
+    "p": 0.990548070599104,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "reset-2fa",
+    "pass": 1,
+    "ms": 945,
+    "choice": "support",
+    "p": 0.9945394692616552,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "bug-refund",
+    "pass": 1,
+    "ms": 914,
+    "choice": "billing",
+    "p": 0.9452612763451165,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "seat-count",
+    "pass": 1,
+    "ms": 911,
+    "choice": "billing",
+    "p": 0.804505637258956,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "vague",
+    "pass": 1,
+    "ms": 810,
+    "choice": "engineering",
+    "p": 0.9081942429666876,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "double-charge",
+    "pass": 2,
+    "ms": 914,
+    "choice": "billing",
+    "p": 0.9957393421636658,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "invoice-vat",
+    "pass": 2,
+    "ms": 120,
+    "choice": "billing",
+    "p": 0.9909448013061272,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "card-declined",
+    "pass": 2,
+    "ms": 127,
+    "choice": "billing",
+    "p": 0.9696857945114368,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "checkout-500",
+    "pass": 2,
+    "ms": 107,
+    "choice": "engineering",
+    "p": 0.9912280777907837,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "webhook-silent",
+    "pass": 2,
+    "ms": 109,
+    "choice": "engineering",
+    "p": 0.9517121375266717,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "safari-blank",
+    "pass": 2,
+    "ms": 907,
+    "choice": "engineering",
+    "p": 0.9417605279508368,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "csv-export",
+    "pass": 2,
+    "ms": 103,
+    "choice": "support",
+    "p": 0.9927901803371021,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "add-teammate",
+    "pass": 2,
+    "ms": 97,
+    "choice": "support",
+    "p": 0.990548070599104,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "reset-2fa",
+    "pass": 2,
+    "ms": 94,
+    "choice": "support",
+    "p": 0.9945394692616552,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "bug-refund",
+    "pass": 2,
+    "ms": 914,
+    "choice": "billing",
+    "p": 0.9452612763451165,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "seat-count",
+    "pass": 2,
+    "ms": 101,
+    "choice": "billing",
+    "p": 0.804505637258956,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "vague",
+    "pass": 2,
+    "ms": 117,
+    "choice": "engineering",
+    "p": 0.9081942429666876,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "double-charge",
+    "pass": 3,
+    "ms": 108,
+    "choice": "billing",
+    "p": 0.9957393421636658,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "invoice-vat",
+    "pass": 3,
+    "ms": 98,
+    "choice": "billing",
+    "p": 0.9909448013061272,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "card-declined",
+    "pass": 3,
+    "ms": 98,
+    "choice": "billing",
+    "p": 0.9696857945114368,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "nimble",
+    "case": "checkout-500",
+    "pass": 3,
+    "ms": 98,
+    "choice": "engineering",
+    "p": 0.9912280777907837,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "webhook-silent",
+    "pass": 3,
+    "ms": 97,
+    "choice": "engineering",
+    "p": 0.9517121375266717,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "safari-blank",
+    "pass": 3,
+    "ms": 938,
+    "choice": "engineering",
+    "p": 0.9417605279508368,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "nimble",
+    "case": "csv-export",
+    "pass": 3,
+    "ms": 100,
+    "choice": "support",
+    "p": 0.9927901803371021,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "add-teammate",
+    "pass": 3,
+    "ms": 97,
+    "choice": "support",
+    "p": 0.990548070599104,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "reset-2fa",
+    "pass": 3,
+    "ms": 107,
+    "choice": "support",
+    "p": 0.9945394692616552,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "nimble",
+    "case": "bug-refund",
+    "pass": 3,
+    "ms": 931,
+    "choice": "billing",
+    "p": 0.9452612763451165,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "seat-count",
+    "pass": 3,
+    "ms": 97,
+    "choice": "billing",
+    "p": 0.804505637258956,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "nimble",
+    "case": "vague",
+    "pass": 3,
+    "ms": 93,
+    "choice": "engineering",
+    "p": 0.9081942429666876,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "double-charge",
+    "pass": 1,
+    "ms": 400,
+    "choice": "billing",
+    "p": 0.995251762814922,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "invoice-vat",
+    "pass": 1,
+    "ms": 401,
+    "choice": "billing",
+    "p": 0.9862794193974032,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "card-declined",
+    "pass": 1,
+    "ms": 404,
+    "choice": "billing",
+    "p": 0.9740567334938267,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "checkout-500",
+    "pass": 1,
+    "ms": 466,
+    "choice": "engineering",
+    "p": 0.993556071318993,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "webhook-silent",
+    "pass": 1,
+    "ms": 455,
+    "choice": "engineering",
+    "p": 0.9460335245603673,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "safari-blank",
+    "pass": 1,
+    "ms": 405,
+    "choice": "engineering",
+    "p": 0.9562542516879932,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "csv-export",
+    "pass": 1,
+    "ms": 415,
+    "choice": "support",
+    "p": 0.9561504317977786,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "add-teammate",
+    "pass": 1,
+    "ms": 402,
+    "choice": "support",
+    "p": 0.9840669000234258,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "reset-2fa",
+    "pass": 1,
+    "ms": 456,
+    "choice": "support",
+    "p": 0.9766806590382103,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "bug-refund",
+    "pass": 1,
+    "ms": 458,
+    "choice": "billing",
+    "p": 0.7418162527487341,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "seat-count",
+    "pass": 1,
+    "ms": 451,
+    "choice": "billing",
+    "p": 0.5265355201124455,
+    "decision": "triage",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "vague",
+    "pass": 1,
+    "ms": 407,
+    "choice": "engineering",
+    "p": 0.957574360623423,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "double-charge",
+    "pass": 2,
+    "ms": 399,
+    "choice": "billing",
+    "p": 0.995251762814922,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "invoice-vat",
+    "pass": 2,
+    "ms": 72,
+    "choice": "billing",
+    "p": 0.9862794193974032,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "card-declined",
+    "pass": 2,
+    "ms": 71,
+    "choice": "billing",
+    "p": 0.9740567334938267,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "checkout-500",
+    "pass": 2,
+    "ms": 62,
+    "choice": "engineering",
+    "p": 0.993556071318993,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "webhook-silent",
+    "pass": 2,
+    "ms": 60,
+    "choice": "engineering",
+    "p": 0.9460335245603673,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "safari-blank",
+    "pass": 2,
+    "ms": 418,
+    "choice": "engineering",
+    "p": 0.9562542516879932,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "csv-export",
+    "pass": 2,
+    "ms": 67,
+    "choice": "support",
+    "p": 0.9561504317977786,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "add-teammate",
+    "pass": 2,
+    "ms": 64,
+    "choice": "support",
+    "p": 0.9840669000234258,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "reset-2fa",
+    "pass": 2,
+    "ms": 61,
+    "choice": "support",
+    "p": 0.9766806590382103,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "bug-refund",
+    "pass": 2,
+    "ms": 451,
+    "choice": "billing",
+    "p": 0.7418162527487341,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "seat-count",
+    "pass": 2,
+    "ms": 68,
+    "choice": "billing",
+    "p": 0.5265355201124455,
+    "decision": "triage",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "vague",
+    "pass": 2,
+    "ms": 67,
+    "choice": "engineering",
+    "p": 0.957574360623423,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "double-charge",
+    "pass": 3,
+    "ms": 71,
+    "choice": "billing",
+    "p": 0.995251762814922,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "invoice-vat",
+    "pass": 3,
+    "ms": 62,
+    "choice": "billing",
+    "p": 0.9862794193974032,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "card-declined",
+    "pass": 3,
+    "ms": 64,
+    "choice": "billing",
+    "p": 0.9740567334938267,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1",
+    "case": "checkout-500",
+    "pass": 3,
+    "ms": 61,
+    "choice": "engineering",
+    "p": 0.993556071318993,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "webhook-silent",
+    "pass": 3,
+    "ms": 63,
+    "choice": "engineering",
+    "p": 0.9460335245603673,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "safari-blank",
+    "pass": 3,
+    "ms": 407,
+    "choice": "engineering",
+    "p": 0.9562542516879932,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1",
+    "case": "csv-export",
+    "pass": 3,
+    "ms": 61,
+    "choice": "support",
+    "p": 0.9561504317977786,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "add-teammate",
+    "pass": 3,
+    "ms": 59,
+    "choice": "support",
+    "p": 0.9840669000234258,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "reset-2fa",
+    "pass": 3,
+    "ms": 59,
+    "choice": "support",
+    "p": 0.9766806590382103,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1",
+    "case": "bug-refund",
+    "pass": 3,
+    "ms": 467,
+    "choice": "billing",
+    "p": 0.7418162527487341,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "seat-count",
+    "pass": 3,
+    "ms": 67,
+    "choice": "billing",
+    "p": 0.5265355201124455,
+    "decision": "triage",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1",
+    "case": "vague",
+    "pass": 3,
+    "ms": 64,
+    "choice": "engineering",
+    "p": 0.957574360623423,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "double-charge",
+    "pass": 1,
+    "ms": 103,
+    "choice": "billing",
+    "p": 0.987066284347336,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "invoice-vat",
+    "pass": 1,
+    "ms": 94,
+    "choice": "billing",
+    "p": 0.7196543202270841,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "card-declined",
+    "pass": 1,
+    "ms": 89,
+    "choice": "billing",
+    "p": 0.7313384929098604,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "checkout-500",
+    "pass": 1,
+    "ms": 97,
+    "choice": "engineering",
+    "p": 0.9681920429608176,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "webhook-silent",
+    "pass": 1,
+    "ms": 97,
+    "choice": "engineering",
+    "p": 0.9947124224177875,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "safari-blank",
+    "pass": 1,
+    "ms": 89,
+    "choice": "engineering",
+    "p": 0.9760365492362985,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "csv-export",
+    "pass": 1,
+    "ms": 91,
+    "choice": "support",
+    "p": 0.9606748909774132,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "add-teammate",
+    "pass": 1,
+    "ms": 89,
+    "choice": "support",
+    "p": 0.9568203944913234,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "reset-2fa",
+    "pass": 1,
+    "ms": 98,
+    "choice": "support",
+    "p": 0.7307906508895041,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "bug-refund",
+    "pass": 1,
+    "ms": 106,
+    "choice": "engineering",
+    "p": 0.8156426603995093,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "seat-count",
+    "pass": 1,
+    "ms": 98,
+    "choice": "billing",
+    "p": 0.7743560550025553,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "vague",
+    "pass": 1,
+    "ms": 87,
+    "choice": "engineering",
+    "p": 0.8502619229454117,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "double-charge",
+    "pass": 2,
+    "ms": 87,
+    "choice": "billing",
+    "p": 0.987066284347336,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "invoice-vat",
+    "pass": 2,
+    "ms": 26,
+    "choice": "billing",
+    "p": 0.7196543202270841,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "card-declined",
+    "pass": 2,
+    "ms": 23,
+    "choice": "billing",
+    "p": 0.7313384929098604,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "checkout-500",
+    "pass": 2,
+    "ms": 23,
+    "choice": "engineering",
+    "p": 0.9681920429608176,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "webhook-silent",
+    "pass": 2,
+    "ms": 26,
+    "choice": "engineering",
+    "p": 0.9947124224177875,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "safari-blank",
+    "pass": 2,
+    "ms": 120,
+    "choice": "engineering",
+    "p": 0.9760365492362985,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "csv-export",
+    "pass": 2,
+    "ms": 54,
+    "choice": "support",
+    "p": 0.9606748909774132,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "add-teammate",
+    "pass": 2,
+    "ms": 32,
+    "choice": "support",
+    "p": 0.9568203944913234,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "reset-2fa",
+    "pass": 2,
+    "ms": 27,
+    "choice": "support",
+    "p": 0.7307906508895041,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "bug-refund",
+    "pass": 2,
+    "ms": 172,
+    "choice": "engineering",
+    "p": 0.8156426603995093,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "seat-count",
+    "pass": 2,
+    "ms": 35,
+    "choice": "billing",
+    "p": 0.7743560550025553,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "vague",
+    "pass": 2,
+    "ms": 39,
+    "choice": "engineering",
+    "p": 0.8502619229454117,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "double-charge",
+    "pass": 3,
+    "ms": 52,
+    "choice": "billing",
+    "p": 0.987066284347336,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "invoice-vat",
+    "pass": 3,
+    "ms": 112,
+    "choice": "billing",
+    "p": 0.7196543202270841,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "card-declined",
+    "pass": 3,
+    "ms": 39,
+    "choice": "billing",
+    "p": 0.7313384929098604,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "checkout-500",
+    "pass": 3,
+    "ms": 29,
+    "choice": "engineering",
+    "p": 0.9681920429608176,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "webhook-silent",
+    "pass": 3,
+    "ms": 58,
+    "choice": "engineering",
+    "p": 0.9947124224177875,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "safari-blank",
+    "pass": 3,
+    "ms": 111,
+    "choice": "engineering",
+    "p": 0.9760365492362985,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "csv-export",
+    "pass": 3,
+    "ms": 26,
+    "choice": "support",
+    "p": 0.9606748909774132,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "add-teammate",
+    "pass": 3,
+    "ms": 31,
+    "choice": "support",
+    "p": 0.9568203944913234,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "reset-2fa",
+    "pass": 3,
+    "ms": 44,
+    "choice": "support",
+    "p": 0.7307906508895041,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "bug-refund",
+    "pass": 3,
+    "ms": 120,
+    "choice": "engineering",
+    "p": 0.8156426603995093,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "seat-count",
+    "pass": 3,
+    "ms": 27,
+    "choice": "billing",
+    "p": 0.7743560550025553,
+    "decision": "billing",
+    "expect": "triage"
+  },
+  {
+    "model": "tev1:0.8b",
+    "case": "vague",
+    "pass": 3,
+    "ms": 29,
+    "choice": "engineering",
+    "p": 0.8502619229454117,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "double-charge",
+    "pass": 1,
+    "ms": 543,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "invoice-vat",
+    "pass": 1,
+    "ms": 564,
+    "choice": "billing",
+    "p": 1,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "card-declined",
+    "pass": 1,
+    "ms": 749,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "checkout-500",
+    "pass": 1,
+    "ms": 467,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "webhook-silent",
+    "pass": 1,
+    "ms": 573,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "safari-blank",
+    "pass": 1,
+    "ms": 562,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "csv-export",
+    "pass": 1,
+    "ms": 562,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "add-teammate",
+    "pass": 1,
+    "ms": 556,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "reset-2fa",
+    "pass": 1,
+    "ms": 568,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "bug-refund",
+    "pass": 1,
+    "ms": 557,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "seat-count",
+    "pass": 1,
+    "ms": 579,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "vague",
+    "pass": 1,
+    "ms": 550,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "double-charge",
+    "pass": 2,
+    "ms": 552,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "invoice-vat",
+    "pass": 2,
+    "ms": 550,
+    "choice": "billing",
+    "p": 1,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "card-declined",
+    "pass": 2,
+    "ms": 545,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "checkout-500",
+    "pass": 2,
+    "ms": 547,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "webhook-silent",
+    "pass": 2,
+    "ms": 548,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "safari-blank",
+    "pass": 2,
+    "ms": 548,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "csv-export",
+    "pass": 2,
+    "ms": 558,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "add-teammate",
+    "pass": 2,
+    "ms": 587,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "reset-2fa",
+    "pass": 2,
+    "ms": 606,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "bug-refund",
+    "pass": 2,
+    "ms": 579,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "seat-count",
+    "pass": 2,
+    "ms": 556,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "vague",
+    "pass": 2,
+    "ms": 543,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "double-charge",
+    "pass": 3,
+    "ms": 553,
+    "choice": "billing",
+    "p": 1,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "invoice-vat",
+    "pass": 3,
+    "ms": 570,
+    "choice": "billing",
+    "p": 1,
+    "decision": "billing",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "card-declined",
+    "pass": 3,
+    "ms": 549,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "billing"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "checkout-500",
+    "pass": 3,
+    "ms": 539,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "webhook-silent",
+    "pass": 3,
+    "ms": 550,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "safari-blank",
+    "pass": 3,
+    "ms": 582,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "engineering"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "csv-export",
+    "pass": 3,
+    "ms": 556,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "add-teammate",
+    "pass": 3,
+    "ms": 552,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "reset-2fa",
+    "pass": 3,
+    "ms": 544,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "support"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "bug-refund",
+    "pass": 3,
+    "ms": 460,
+    "choice": "engineering",
+    "p": 1,
+    "decision": "engineering",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "seat-count",
+    "pass": 3,
+    "ms": 569,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "triage"
+  },
+  {
+    "model": "granite4.2:3b",
+    "case": "vague",
+    "pass": 3,
+    "ms": 579,
+    "choice": "support",
+    "p": 1,
+    "decision": "support",
+    "expect": "triage"
+  }
+]

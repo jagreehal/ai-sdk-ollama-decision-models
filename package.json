@@ -1,0 +1,26 @@
+{
+  "name": "ai-sdk-ollama-decision-models",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ollama decision models (nimble, tev1) through ai-sdk-ollama and the AI SDK's experimental_evaluate.",
+  "scripts": {
+    "triage": "tsx src/triage.ts",
+    "bench": "tsx src/bench.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/provider-utils": "5.0.53",
+    "ai": "7.0.124",
+    "ai-sdk-ollama": "4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
