@@ -1,0 +1,28 @@
+$ tsx src/support/eval.ts
+✓ I never made that purchase.  wantsRefund=0.14 reportsFraud=0.66 requestsHuman=0.04 requestsFeeWaiver=0.10
+✗ There's a £240 charge from a shop I've never visited. Can you get my money back?  wantsRefund=0.99 reportsFraud=0.73 requestsHuman=0.27 requestsFeeWaiver=0.90  miss: requestsFeeWaiver
+✗ I'm not saying it's fraud, but I've never used that shop.  wantsRefund=0.08 reportsFraud=0.19 requestsHuman=0.01 requestsFeeWaiver=0.02  miss: reportsFraud
+✓ Someone used my card in Lisbon. I am in Leeds.  wantsRefund=0.76 reportsFraud=0.84 requestsHuman=0.08 requestsFeeWaiver=0.38
+✓ Can you return my £15?  wantsRefund=0.96 reportsFraud=0.17 requestsHuman=0.06 requestsFeeWaiver=0.47
+✗ The subscription charged me after I cancelled. Please refund it.  wantsRefund=0.99 reportsFraud=0.41 requestsHuman=0.06 requestsFeeWaiver=0.81  miss: requestsFeeWaiver
+✓ I was charged twice for the same order, I want one of them back.  wantsRefund=0.97 reportsFraud=0.22 requestsHuman=0.06 requestsFeeWaiver=0.73
+✗ I'd like to speak to a manager.  wantsRefund=0.01 reportsFraud=0.02 requestsHuman=0.71 requestsFeeWaiver=0.01  miss: requestsHuman
+✓ Stop sending me bot replies and put me through to a real person.  wantsRefund=0.01 reportsFraud=0.01 requestsHuman=0.95 requestsFeeWaiver=0.00
+✗ Can someone call me? I would rather talk this through.  wantsRefund=0.01 reportsFraud=0.02 requestsHuman=0.52 requestsFeeWaiver=0.00  miss: requestsHuman
+✓ The £35 late fee will leave me overdrawn. Can you remove it?  wantsRefund=0.59 reportsFraud=0.09 requestsHuman=0.41 requestsFeeWaiver=0.98
+✓ Please waive the overdraft charge, it was a one-off.  wantsRefund=0.57 reportsFraud=0.05 requestsHuman=0.07 requestsFeeWaiver=0.97
+✓ What's my current balance?  wantsRefund=0.15 reportsFraud=0.04 requestsHuman=0.01 requestsFeeWaiver=0.02
+✓ How do I change my address?  wantsRefund=0.01 reportsFraud=0.03 requestsHuman=0.02 requestsFeeWaiver=0.01
+✓ Thanks, that sorted it.  wantsRefund=0.01 reportsFraud=0.07 requestsHuman=0.03 requestsFeeWaiver=0.05
+✗ When will my refund from last week arrive?  wantsRefund=0.95 reportsFraud=0.02 requestsHuman=0.02 requestsFeeWaiver=0.01  miss: wantsRefund
+✓ I bought this at the shop on the corner yesterday and I want a receipt.  wantsRefund=0.03 reportsFraud=0.03 requestsHuman=0.19 requestsFeeWaiver=0.02
+✓ Is there a fee for paying abroad?  wantsRefund=0.09 reportsFraud=0.08 requestsHuman=0.01 requestsFeeWaiver=0.23
+
+tev1, 18 messages, p50 1047ms per message (4 questions)
+
+| Question | Positives | Threshold | FN @ threshold | FP @ threshold | FN @ 0.5 | FP @ 0.5 |
+|---|---|---|---|---|---|---|
+| wantsRefund | 4 | 0.8 | 0 | 1 | 0 | 4 |
+| reportsFraud | 4 | 0.6 | 1 | 0 | 1 | 0 |
+| requestsHuman | 3 | 0.8 | 2 | 0 | 0 | 0 |
+| requestsFeeWaiver | 2 | 0.8 | 0 | 2 | 0 | 3 |

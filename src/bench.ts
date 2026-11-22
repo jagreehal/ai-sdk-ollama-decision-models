@@ -31,7 +31,6 @@ const cases = [
 const models: Record<string, EvaluationModel> = {
   nimble: ollama.evaluationModel('nimble'),
   tev1: ollama.evaluationModel('tev1'),
-  'tev1:0.8b': ollama.evaluationModel('tev1:0.8b'),
   'granite4.2:3b': new EvaluationLanguageModel({ model: ollama('granite4.2:3b'), provider: 'ollama.evaluation' }),
 };
 const only = process.argv.slice(2);

@@ -1,0 +1,225 @@
+[
+  {
+    "message": "I never made that purchase.",
+    "label": {
+      "reportsFraud": true
+    },
+    "judgments": {
+      "wantsRefund": 0.13621517829427157,
+      "reportsFraud": 0.6577930748903068,
+      "requestsHuman": 0.0436948063708091,
+      "requestsFeeWaiver": 0.0993803815978073
+    },
+    "ms": 1271
+  },
+  {
+    "message": "There's a £240 charge from a shop I've never visited. Can you get my money back?",
+    "label": {
+      "reportsFraud": true,
+      "wantsRefund": true
+    },
+    "judgments": {
+      "wantsRefund": 0.9915423051251473,
+      "reportsFraud": 0.7317442886388811,
+      "requestsHuman": 0.27352094820871825,
+      "requestsFeeWaiver": 0.904895558213804
+    },
+    "ms": 1048
+  },
+  {
+    "message": "I'm not saying it's fraud, but I've never used that shop.",
+    "label": {
+      "reportsFraud": true
+    },
+    "judgments": {
+      "wantsRefund": 0.0776089519044797,
+      "reportsFraud": 0.189497068613442,
+      "requestsHuman": 0.01235957057676966,
+      "requestsFeeWaiver": 0.015512041617891595
+    },
+    "ms": 1141
+  },
+  {
+    "message": "Someone used my card in Lisbon. I am in Leeds.",
+    "label": {
+      "reportsFraud": true
+    },
+    "judgments": {
+      "wantsRefund": 0.7620251463922326,
+      "reportsFraud": 0.8403219454528984,
+      "requestsHuman": 0.07909618635888074,
+      "requestsFeeWaiver": 0.3786672915023163
+    },
+    "ms": 1044
+  },
+  {
+    "message": "Can you return my £15?",
+    "label": {
+      "wantsRefund": true
+    },
+    "judgments": {
+      "wantsRefund": 0.9637596311336315,
+      "reportsFraud": 0.168065017069797,
+      "requestsHuman": 0.061076387272763336,
+      "requestsFeeWaiver": 0.4745893242756457
+    },
+    "ms": 1100
+  },
+  {
+    "message": "The subscription charged me after I cancelled. Please refund it.",
+    "label": {
+      "wantsRefund": true
+    },
+    "judgments": {
+      "wantsRefund": 0.9907297095871727,
+      "reportsFraud": 0.4131677324931098,
+      "requestsHuman": 0.05742159241042292,
+      "requestsFeeWaiver": 0.8081606751447752
+    },
+    "ms": 1044
+  },
+  {
+    "message": "I was charged twice for the same order, I want one of them back.",
+    "label": {
+      "wantsRefund": true
+    },
+    "judgments": {
+      "wantsRefund": 0.9732328175932221,
+      "reportsFraud": 0.217939965930291,
+      "requestsHuman": 0.05854169161296536,
+      "requestsFeeWaiver": 0.7295254233223754
+    },
+    "ms": 1045
+  },
+  {
+    "message": "I'd like to speak to a manager.",
+    "label": {
+      "requestsHuman": true
+    },
+    "judgments": {
+      "wantsRefund": 0.012997983487842322,
+      "reportsFraud": 0.02409123740661898,
+      "requestsHuman": 0.7066303144412966,
+      "requestsFeeWaiver": 0.0073943294785561746
+    },
+    "ms": 1040
+  },
+  {
+    "message": "Stop sending me bot replies and put me through to a real person.",
+    "label": {
+      "requestsHuman": true
+    },
+    "judgments": {
+      "wantsRefund": 0.0051966745761183476,
+      "reportsFraud": 0.014311016474903761,
+      "requestsHuman": 0.9539180788429886,
+      "requestsFeeWaiver": 0.003656325429800454
+    },
+    "ms": 1045
+  },
+  {
+    "message": "Can someone call me? I would rather talk this through.",
+    "label": {
+      "requestsHuman": true
+    },
+    "judgments": {
+      "wantsRefund": 0.005892604671399628,
+      "reportsFraud": 0.019115880928235157,
+      "requestsHuman": 0.522430613090373,
+      "requestsFeeWaiver": 0.004121908769052658
+    },
+    "ms": 1051
+  },
+  {
+    "message": "The £35 late fee will leave me overdrawn. Can you remove it?",
+    "label": {
+      "requestsFeeWaiver": true
+    },
+    "judgments": {
+      "wantsRefund": 0.5891306133023313,
+      "reportsFraud": 0.09473182956112917,
+      "requestsHuman": 0.4090428151173605,
+      "requestsFeeWaiver": 0.9761065330167116
+    },
+    "ms": 1044
+  },
+  {
+    "message": "Please waive the overdraft charge, it was a one-off.",
+    "label": {
+      "requestsFeeWaiver": true
+    },
+    "judgments": {
+      "wantsRefund": 0.5677990035489966,
+      "reportsFraud": 0.04733633923981803,
+      "requestsHuman": 0.06685181817106375,
+      "requestsFeeWaiver": 0.9749490221157386
+    },
+    "ms": 1038
+  },
+  {
+    "message": "What's my current balance?",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.14500584230793276,
+      "reportsFraud": 0.04223222392187872,
+      "requestsHuman": 0.010265273371108484,
+      "requestsFeeWaiver": 0.01940765653414476
+    },
+    "ms": 1258
+  },
+  {
+    "message": "How do I change my address?",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.008423947667860301,
+      "reportsFraud": 0.025085426508191958,
+      "requestsHuman": 0.018313866019580932,
+      "requestsFeeWaiver": 0.007134414322473332
+    },
+    "ms": 1038
+  },
+  {
+    "message": "Thanks, that sorted it.",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.013980141096634072,
+      "reportsFraud": 0.06643361388204895,
+      "requestsHuman": 0.03080275587180203,
+      "requestsFeeWaiver": 0.052807151911940575
+    },
+    "ms": 1047
+  },
+  {
+    "message": "When will my refund from last week arrive?",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.9509136558243648,
+      "reportsFraud": 0.022408491471545066,
+      "requestsHuman": 0.019075866736650668,
+      "requestsFeeWaiver": 0.007289243203141497
+    },
+    "ms": 1039
+  },
+  {
+    "message": "I bought this at the shop on the corner yesterday and I want a receipt.",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.028255740536635113,
+      "reportsFraud": 0.03321472476189684,
+      "requestsHuman": 0.19269211375040676,
+      "requestsFeeWaiver": 0.01516213925598968
+    },
+    "ms": 1134
+  },
+  {
+    "message": "Is there a fee for paying abroad?",
+    "label": {},
+    "judgments": {
+      "wantsRefund": 0.09092607455487109,
+      "reportsFraud": 0.07577251491634238,
+      "requestsHuman": 0.013190830369363984,
+      "requestsFeeWaiver": 0.230597781135623
+    },
+    "ms": 1142
+  }
+]

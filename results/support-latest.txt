@@ -1,0 +1,86 @@
+$ tsx src/support/run.ts
+> I'm not saying someone stole my card, but there's a £240 charge from a shop I've never visited. Can you get my money back?
+  Judgments (tev1, 1263ms):
+    wantsRefund       0.99
+    reportsFraud      0.90
+    requestsHuman     0.47
+    requestsFeeWaiver 0.92
+  Facts:
+    refundEligible    false
+    feeWaiverEligible false
+    amount            240
+  Rules:
+    fraudThreshold    0.6
+    intentThreshold   0.8
+    autoRefundLimit   25
+  Decision: FRAUD_REVIEW
+  Reason:   reportsFraud 0.90 >= 0.6
+
+> I was only one day late because my salary arrived after the bank holiday. The £35 fee is going to leave me overdrawn. Can you remove it?
+  Judgments (tev1, 1044ms):
+    wantsRefund       0.74
+    reportsFraud      0.04
+    requestsHuman     0.52
+    requestsFeeWaiver 0.99
+  Facts:
+    refundEligible    false
+    feeWaiverEligible true
+    amount            35
+  Rules:
+    fraudThreshold    0.6
+    intentThreshold   0.8
+    autoRefundLimit   25
+  Decision: WAIVE_FEE
+  Reason:   waiver wanted, account eligible
+
+> The coffee machine subscription charged me £12 after I cancelled. Please refund it.
+  Judgments (tev1, 1043ms):
+    wantsRefund       0.99
+    reportsFraud      0.46
+    requestsHuman     0.05
+    requestsFeeWaiver 0.93
+  Facts:
+    refundEligible    true
+    feeWaiverEligible false
+    amount            12
+  Rules:
+    fraudThreshold    0.6
+    intentThreshold   0.8
+    autoRefundLimit   25
+  Decision: REFUND
+  Reason:   refund wanted, eligible, £12 <= £25
+
+> I've been going round in circles with the chatbot. Put me through to a person.
+  Judgments (tev1, 1050ms):
+    wantsRefund       0.01
+    reportsFraud      0.01
+    requestsHuman     0.97
+    requestsFeeWaiver 0.00
+  Facts:
+    refundEligible    true
+    feeWaiverEligible false
+    amount            0
+  Rules:
+    fraudThreshold    0.6
+    intentThreshold   0.8
+    autoRefundLimit   25
+  Decision: HUMAN_HANDOFF
+  Reason:   requestsHuman 0.97 >= 0.8
+
+> What's my current balance?
+  Judgments (tev1, 9ms):
+    wantsRefund       0.15
+    reportsFraud      0.04
+    requestsHuman     0.01
+    requestsFeeWaiver 0.02
+  Facts:
+    refundEligible    true
+    feeWaiverEligible false
+    amount            0
+  Rules:
+    fraudThreshold    0.6
+    intentThreshold   0.8
+    autoRefundLimit   25
+  Decision: ANSWER
+  Reason:   no judgment above 0.4
+

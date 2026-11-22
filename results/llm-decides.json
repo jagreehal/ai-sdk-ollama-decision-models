@@ -1,0 +1,242 @@
+[
+  {
+    "model": "granite4.2:3b",
+    "pass": 1,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 13935
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 1,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 21171
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 1,
+    "expect": "REFUND",
+    "got": "REFUND",
+    "raw": "REFUND",
+    "ms": 13492
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 1,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 9689
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 1,
+    "expect": "ANSWER",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 15460
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 2,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 9819
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 2,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 9109
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 2,
+    "expect": "REFUND",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 59793
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 2,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 9098
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 2,
+    "expect": "ANSWER",
+    "got": "ANSWER",
+    "raw": "ANSWER",
+    "ms": 11665
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 3,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 17436
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 3,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 18218
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 3,
+    "expect": "REFUND",
+    "got": "REFUND",
+    "raw": "REFUND",
+    "ms": 14715
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 3,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 5511
+  },
+  {
+    "model": "granite4.2:3b",
+    "pass": 3,
+    "expect": "ANSWER",
+    "got": "ANSWER",
+    "raw": "ANSWER",
+    "ms": 25952
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 1,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 173002
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 1,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 73247
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 1,
+    "expect": "REFUND",
+    "got": "REFUND",
+    "raw": "REFUND",
+    "ms": 84805
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 1,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 17531
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 1,
+    "expect": "ANSWER",
+    "got": "ANSWER",
+    "raw": "ANSWER",
+    "ms": 22824
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 2,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 204676
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 2,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 32890
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 2,
+    "expect": "REFUND",
+    "got": "REFUND",
+    "raw": "REFUND",
+    "ms": 41840
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 2,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 27370
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 2,
+    "expect": "ANSWER",
+    "got": "ANSWER",
+    "raw": "ANSWER",
+    "ms": 18484
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 3,
+    "expect": "FRAUD_REVIEW",
+    "got": "FRAUD_REVIEW",
+    "raw": "FRAUD_REVIEW",
+    "ms": 169472
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 3,
+    "expect": "WAIVE_FEE",
+    "got": "WAIVE_FEE",
+    "raw": "WAIVE_FEE",
+    "ms": 31353
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 3,
+    "expect": "REFUND",
+    "got": "REFUND",
+    "raw": "REFUND",
+    "ms": 100549
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 3,
+    "expect": "HUMAN_HANDOFF",
+    "got": "HUMAN_HANDOFF",
+    "raw": "HUMAN_HANDOFF",
+    "ms": 25836
+  },
+  {
+    "model": "qwen3.5:4b",
+    "pass": 3,
+    "expect": "ANSWER",
+    "got": "ANSWER",
+    "raw": "ANSWER",
+    "ms": 31625
+  }
+]

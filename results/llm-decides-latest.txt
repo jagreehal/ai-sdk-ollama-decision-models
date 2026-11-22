@@ -1,0 +1,36 @@
+$ tsx src/support/llm-decides.ts
+granite4.2:3b #1 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  13935ms
+granite4.2:3b #1 ✓ WAIVE_FEE     expected WAIVE_FEE     21171ms
+granite4.2:3b #1 ✓ REFUND        expected REFUND        13492ms
+granite4.2:3b #1 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 9689ms
+granite4.2:3b #1 ✗ HUMAN_HANDOFF expected ANSWER        15460ms
+granite4.2:3b #2 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  9819ms
+granite4.2:3b #2 ✓ WAIVE_FEE     expected WAIVE_FEE     9109ms
+granite4.2:3b #2 ✗ FRAUD_REVIEW  expected REFUND        59793ms
+granite4.2:3b #2 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 9098ms
+granite4.2:3b #2 ✓ ANSWER        expected ANSWER        11665ms
+granite4.2:3b #3 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  17436ms
+granite4.2:3b #3 ✓ WAIVE_FEE     expected WAIVE_FEE     18218ms
+granite4.2:3b #3 ✓ REFUND        expected REFUND        14715ms
+granite4.2:3b #3 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 5511ms
+granite4.2:3b #3 ✓ ANSWER        expected ANSWER        25952ms
+qwen3.5:4b #1 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  173002ms
+qwen3.5:4b #1 ✓ WAIVE_FEE     expected WAIVE_FEE     73247ms
+qwen3.5:4b #1 ✓ REFUND        expected REFUND        84805ms
+qwen3.5:4b #1 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 17531ms
+qwen3.5:4b #1 ✓ ANSWER        expected ANSWER        22824ms
+qwen3.5:4b #2 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  204676ms
+qwen3.5:4b #2 ✓ WAIVE_FEE     expected WAIVE_FEE     32890ms
+qwen3.5:4b #2 ✓ REFUND        expected REFUND        41840ms
+qwen3.5:4b #2 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 27370ms
+qwen3.5:4b #2 ✓ ANSWER        expected ANSWER        18484ms
+qwen3.5:4b #3 ✓ FRAUD_REVIEW  expected FRAUD_REVIEW  169472ms
+qwen3.5:4b #3 ✓ WAIVE_FEE     expected WAIVE_FEE     31353ms
+qwen3.5:4b #3 ✓ REFUND        expected REFUND        100549ms
+qwen3.5:4b #3 ✓ HUMAN_HANDOFF expected HUMAN_HANDOFF 25836ms
+qwen3.5:4b #3 ✓ ANSWER        expected ANSWER        31625ms
+
+| Model | Right | Same answer all passes | Wrong answers |
+|---|---|---|---|
+| granite4.2:3b | 13/15 | 3/5 | ANSWER → HUMAN_HANDOFF, REFUND → FRAUD_REVIEW |
+| qwen3.5:4b | 15/15 | 5/5 | none |

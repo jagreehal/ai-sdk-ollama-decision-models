@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Ollama decision models (nimble, tev1) through ai-sdk-ollama and the AI SDK's experimental_evaluate.",
+  "description": "Ollama decision models (nimble, tev1) through ai-sdk-ollama: ticket triage, and letting the model judge while code decides.",
   "scripts": {
     "triage": "tsx src/triage.ts",
     "bench": "tsx src/bench.ts",
-    "check": "tsc --noEmit"
+    "support": "tsx src/support/run.ts",
+    "eval-judgments": "tsx src/support/eval.ts",
+    "test": "tsx --test src/support/*.test.ts",
+    "check": "tsc --noEmit",
+    "llm-decides": "tsx src/support/llm-decides.ts"
   },
   "dependencies": {
     "@ai-sdk/provider-utils": "5.0.53",
