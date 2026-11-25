@@ -3,7 +3,7 @@
  * Setup: ollama pull nimble (Ollama 0.35+)
  * Run: pnpm triage [model]
  */
-import { experimental_evaluate as evaluate } from 'ai';
+import { experimental_decide } from 'ai';
 import { ollama } from 'ai-sdk-ollama';
 
 const modelId = process.argv[2] ?? 'nimble';
@@ -17,8 +17,8 @@ const tickets = [
 
 for (const ticket of tickets) {
   const started = performance.now();
-  const { answers, usage, providerMetadata } = await evaluate({
-    model: ollama.evaluationModel(modelId),
+  const { answers, usage, providerMetadata } = await experimental_decide({
+    model: ollama.decisionModel(modelId),
     state: { ticket },
     questions: {
       team: {

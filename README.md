@@ -60,7 +60,7 @@ Customer message ──► tev1 judgments ──► + account facts ──► de
 
 ## The judgment layer
 
-[`ai-sdk-ollama`](https://github.com/jagreehal/ai-sdk-ollama) exposes Ollama's decision models to the AI SDK's `experimental_evaluate`. A `boolean` question goes to `/v1/systemone` as Ollama's `noul` type, and the answer comes back as a probability between 0 and 1. From [`src/support/judge.ts`](src/support/judge.ts):
+[`ai-sdk-ollama`](https://github.com/jagreehal/ai-sdk-ollama) exposes Ollama's decision models to the AI SDK's `experimental_decide`. A `boolean` question goes to `/v1/systemone` as Ollama's `noul` type, and the answer comes back as a probability between 0 and 1. From [`src/support/judge.ts`](src/support/judge.ts):
 
 ```typescript
 export const QUESTIONS = {
@@ -71,7 +71,7 @@ export const QUESTIONS = {
 } as const;
 
 export async function judge(message: string, modelId = 'tev1'): Promise<Judgments> {
-  const { answers } = await evaluate({ model: ollama.evaluationModel(modelId), state: { message }, questions: QUESTIONS });
+  const { answers } = await experimental_decide({ model: ollama.decisionModel(modelId), state: { message }, questions: QUESTIONS });
   return { wantsRefund: answers.wantsRefund.probability, /* ...the other three */ };
 }
 ```
@@ -214,7 +214,7 @@ There are trade-offs. Every question is more inference work. Small models make m
 
 ## Also in this repo: ticket triage across decision models
 
-`src/triage.ts` and `src/bench.ts` route support tickets to billing, engineering or support with a single `choice` question and a 0.7 confidence cut to `triage`. They compare `nimble`, `tev1` and the chat model `granite4.2:3b` (through the AI SDK's `EvaluationLanguageModel` adapter, which asks it to self-report probabilities).
+`src/triage.ts` and `src/bench.ts` route support tickets to billing, engineering or support with a single `choice` question and a 0.7 confidence cut to `triage`. They compare `nimble`, `tev1` and the chat model `granite4.2:3b` (through the AI SDK's `DecisionLanguageModel` adapter, which asks it to self-report probabilities).
 
 ```bash
 ollama pull nimble && ollama pull tev1 && ollama pull granite4.2:3b

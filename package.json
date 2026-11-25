@@ -14,9 +14,9 @@
     "llm-decides": "tsx src/support/llm-decides.ts"
   },
   "dependencies": {
-    "@ai-sdk/provider-utils": "5.0.53",
-    "ai": "7.0.124",
-    "ai-sdk-ollama": "4.4.0"
+    "@ai-sdk/provider-utils": "5.0.83",
+    "ai": "7.0.181",
+    "ai-sdk-ollama": "4.6.3"
   },
   "devDependencies": {
     "@types/node": "26.6.3",

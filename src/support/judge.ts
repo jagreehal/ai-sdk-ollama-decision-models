@@ -2,7 +2,7 @@
  * The judgments. Four narrow yes/no questions about the message, nothing about policy.
  * ai-sdk-ollama sends `boolean` to Ollama's /v1/systemone as `noul` and returns a probability.
  */
-import { experimental_evaluate as evaluate } from 'ai';
+import { experimental_decide } from 'ai';
 import { ollama } from 'ai-sdk-ollama';
 import type { Judgments } from './decide.ts';
 
@@ -14,7 +14,7 @@ export const QUESTIONS = {
 } as const;
 
 export async function judge(message: string, modelId = 'tev1'): Promise<Judgments> {
-  const { answers } = await evaluate({ model: ollama.evaluationModel(modelId), state: { message }, questions: QUESTIONS });
+  const { answers } = await experimental_decide({ model: ollama.decisionModel(modelId), state: { message }, questions: QUESTIONS });
   return {
     wantsRefund: answers.wantsRefund.probability,
     reportsFraud: answers.reportsFraud.probability,

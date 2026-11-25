@@ -1,11 +1,11 @@
 /**
- * The same labelled tickets through each model, same evaluate() call, three passes.
+ * The same labelled tickets through each model, same experimental_decide() call, three passes.
  * Decision models answer natively. granite4.2:3b goes through the AI SDK adapter,
  * which asks a chat model for the same answers in one structured-output call.
  * Run: pnpm bench [model ...]
  */
-import { experimental_evaluate as evaluate, type Experimental_EvaluationModel as EvaluationModel } from 'ai';
-import { Experimental_EvaluationLanguageModel as EvaluationLanguageModel } from '@ai-sdk/provider-utils/experimental-evaluation';
+import { experimental_decide, type Experimental_DecisionModel as DecisionModel } from 'ai';
+import { Experimental_DecisionLanguageModel as DecisionLanguageModel } from '@ai-sdk/provider-utils/experimental-decision';
 import { ollama } from 'ai-sdk-ollama';
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -28,10 +28,10 @@ const cases = [
   { id: 'vague', expect: 'triage', ticket: 'It is not working again. Sort it out.' },
 ];
 
-const models: Record<string, EvaluationModel> = {
-  nimble: ollama.evaluationModel('nimble'),
-  tev1: ollama.evaluationModel('tev1'),
-  'granite4.2:3b': new EvaluationLanguageModel({ model: ollama('granite4.2:3b'), provider: 'ollama.evaluation' }),
+const models: Record<string, DecisionModel> = {
+  nimble: ollama.decisionModel('nimble'),
+  tev1: ollama.decisionModel('tev1'),
+  'granite4.2:3b': new DecisionLanguageModel({ model: ollama('granite4.2:3b'), provider: 'ollama.decision' }),
 };
 const only = process.argv.slice(2);
 
@@ -43,12 +43,12 @@ for (const [name, model] of Object.entries(models)) {
   // Unload first so no prompt cache survives from an earlier run; the warm-up then
   // pays the load, which is not a decision. Keys above are Ollama model names.
   execFileSync('ollama', ['stop', name]);
-  await evaluate({ model, state: 'warm up', questions: { ok: { type: 'boolean', instructions: 'Is this a greeting?' } } }).catch(() => {});
+  await experimental_decide({ model, state: 'warm up', questions: { ok: { type: 'boolean', instructions: 'Is this a greeting?' } } }).catch(() => {});
   for (let pass = 1; pass <= PASSES; pass++) {
     for (const c of cases) {
       const started = performance.now();
       try {
-        const { answers } = await evaluate({
+        const { answers } = await experimental_decide({
           model,
           state: { ticket: c.ticket },
           questions: {
